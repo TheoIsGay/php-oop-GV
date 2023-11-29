@@ -3,6 +3,7 @@ include "Bitch.php";
 include "Pussy.php";
 include "Chick.php";
 include "Car.php";
+include "Tire.php";
 echo "<h1>Get in whore, we're going shopping<br></h1>";
 /*
 $myBitch = new Bitch;
@@ -36,6 +37,11 @@ for($i=0; $i<3; $i++){
 //var_export($AllPussies);
 */
 
-$myCar= new Car("bmw", 80008);
-$myCar2 = new Car("tesla", 420);
-echo $myCar->increaseMileage(420);
+//$myCar= new Car("bmw", 80008);
+//$myCar2 = new Car("tesla", 420);
+//echo $myCar->increaseMileage(420);
+
+$myTire1 = new Tire(69 , "Winter", "good");
+echo $myTire1->size."<br>";
+echo $myTire1->type."<br>";
+
