@@ -4,6 +4,7 @@ include "Pussy.php";
 include "Chick.php";
 include "Car.php";
 include "Tire.php";
+include "Train.php";
 echo "<h1>Get in whore, we're going shopping<br></h1>";
 /*
 $myBitch = new Bitch;
@@ -45,3 +46,11 @@ $myTire1 = new Tire(69 , "Winter", "good");
 echo $myTire1->size."<br>";
 echo $myTire1->type."<br>";
 
+
+echo Car:: $describe;
+Car:: makeNoise();
+
+$Train1 = new Train("idk", 2, 90);
+$Train2 = new Train;
+echo $Train1->increaseMileage(240);
+Train:: makeNoise();

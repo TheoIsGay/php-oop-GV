@@ -1,12 +1,12 @@
 <?php
 
 class Car{
-    public $brand;
-    private $mileage;
+    static $describe = "I'm a plastic pussy cunt<br>";
+    
 
-    function __construct($b, $m) {
-        $this->brand = $b;
-        $this->mileage = $m;
+    function __construct(public $brand,private $mileage) {
+        $this->brand = $brand;
+        $this->mileage = $mileage;
     }
     function __destruct(){
         echo $this->brand . " is dead at mileage " . $this->mileage; 
@@ -14,5 +14,8 @@ class Car{
     public function increaseMileage($amount){
        $this->mileage += $amount;
        
+    }
+    static function makeNoise(){
+        echo "Beep, Beep!<br>";
     }
 }
