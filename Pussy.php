@@ -1,6 +1,10 @@
 <?php
-class Pussy{
+include_once "Animal.php";
+class Pussy extends Animal{
     public $color = "Light pink and a bit brown";
-    public $age =  69;
-
+    
+    
+    static function woof(){
+        echo "meow, meow!<br>";
+    }
 }

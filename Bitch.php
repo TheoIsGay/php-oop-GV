@@ -1,5 +1,9 @@
 <?php
-class Bitch{
+include_once "Animal.php";
+class Bitch extends Animal{
     public $color;
-    private $age = 9;
+    
+    static function woof(){
+        echo "Woof, woof!<br>";
+    }
 }

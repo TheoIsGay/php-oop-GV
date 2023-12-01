@@ -1,13 +1,10 @@
 <?php
-
-class Car{
+include_once "Vehicle.php";
+class Car extends Vehicle{
     static $describe = "I'm a plastic pussy cunt<br>";
     
 
-    function __construct(public $brand,private $mileage) {
-        $this->brand = $brand;
-        $this->mileage = $mileage;
-    }
+    
     function __destruct(){
         echo $this->brand . " is dead at mileage " . $this->mileage; 
     }

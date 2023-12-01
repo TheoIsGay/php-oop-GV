@@ -2,14 +2,12 @@
 class Tire{
     
     
-    function __construct(
+    public function __construct(
         public $size,
         public $type,
         private $quality
-        ){
-        
-    }
-    function __destruct(){
+        ){}
+    public function __destruct(){
         echo "boom!<br>";
     }
 }
