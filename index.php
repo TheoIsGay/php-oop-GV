@@ -5,16 +5,27 @@ include "Chick.php";
 include "Car.php";
 include "Tire.php";
 include "Train.php";
+include "Math.php";
 echo "<h1>Get in whore, we're going shopping<br></h1>";
 
+echo Math::addTwo(60 , 9) . "<br>";
+echo Math::factorial(10) . "<br>";
+echo Math::sum([420 , 69]) . "<br>";
+echo Math::average(1, 3) . "<br>";
+echo Math::max(6, 9) . "<br>";
 
+
+
+
+
+/*
 $myBitch = new Bitch("Reksis", 6);
 $myPussy1 = new Pussy("Minis", 2);
 $myPussy2 = new Pussy("Bricis", 3);
 Pussy::woof();
 
 
-/*
+
 $myBitchNr2 = new Bitch;
 
 $myChick = new Chick("black", 69);

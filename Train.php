@@ -9,8 +9,8 @@ class Train extends Vehicle{
     parent::_construct($brand, $mileage);
     $this->trackGauge;
   }
-  static function makeNoise() {
-    echo "Choo, Choo!";
-  }
+ static function makeNoise(){
+   echo "Vivi, Vivi! <br>";
+ }
 
 }
